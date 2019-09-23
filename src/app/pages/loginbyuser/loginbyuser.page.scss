@@ -1,0 +1,61 @@
+ion-header::after {
+    background-image: none;
+}
+ion-header {
+    ion-back-button {
+        --color: #fff;
+    }
+}
+
+ion-content {
+    --background: var(--ion-color-primary);
+
+    .wrapContent {
+        height: 100%;
+        flex-direction: column;
+        background-color: #aa333a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .wrapLogo {
+            margin: 0 0 50px;
+        }
+        .formLogin {
+            width: 80%;
+            ion-item {
+                --border-radius: 5px;
+                --background: rgba(221, 221, 221, 0.4666666666666667);
+                color: #fff;
+                --highlight-color-focused: rgba(255, 255, 255, 0.54);
+                margin: 20px 0;
+            }
+            .checkRecordarPassword {
+                --inner-border-width: 0;
+                ion-label {
+                    color: #232323;
+                }
+                ion-checkbox {
+                    --background: rgba(255, 255, 255, 0.77);
+                    --background-checked: rgba(255, 255, 255, 0.77);
+                    --border-color: transparent;
+                    --checkmark-color: #232323;
+                }
+            }
+            ion-item.item-has-focus {
+                ion-label {
+                    color: #fff;
+                }
+            }
+            ion-button {
+                font-weight: 600;
+            }
+            ion-button.btnLogin {
+                margin: 50px 0 0;
+            }
+            ion-button.btnVolver {
+                margin: 10px 0 0;
+                --box-shadow: none;
+            }
+        }
+    }
+}

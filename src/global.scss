@@ -24,3 +24,72 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.slideIntro{
+    .swiper-pagination-bullets {
+        bottom: 11vh;
+    }
+}
+
+ion-menu {
+    ion-header {
+        ion-title {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    }
+    
+    ion-header::after {
+        background-image: none !important;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    ion-content {
+        ion-list {
+            ion-menu-toggle {
+                ion-item {
+                    img {
+                        max-width: 10%;
+                        margin-right: 15px;
+                    }
+                    ion-label {
+                        padding: 5px 0; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+ion-toolbar {
+    ion-buttons {
+        position: absolute;
+    }
+}
+
+ion-select-popover {
+    ion-list {
+        ion-radio-group {
+            ion-item {
+                font-weight: 600;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+ion-alert {
+    .alert-head {
+        .alert-title {
+            font-weight: 600;
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+    .alert-button-group {
+        .alert-button {
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+  <div class="wrapContent">
+    <div class="wrapLogo">
+      <img src="../../../assets/imgs/logo-femaco_login.png"/>
+    </div>
+    <div class="formLogin" >
+    <div *ngIf="authService.token==null"> 
+      <ion-item >
+        <ion-label position="floating">
+          <ion-icon slot="start" name="person"></ion-icon>
+          Usuario
+        </ion-label>
+        <ion-input [(ngModel)]="user"></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-label position="floating">
+          <ion-icon slot="start" name="lock"></ion-icon>
+          Contraseña
+        </ion-label>
+        <ion-input type="password" required [(ngModel)]="pass"></ion-input>
+      </ion-item>
+
+      <ion-item class="checkRecordarPassword" color="transparent" >
+        <ion-label>Recordar contraseña</ion-label>
+        <ion-checkbox slot="start" color="transparent" [(ngModel)]="recordarSesion"></ion-checkbox>
+      </ion-item>
+        
+      <ion-button class="btnLogin" color="secondary" expand="block" (click)="loginbyUser()" >
+        INICIAR SESIÓN
+      </ion-button>
+      <ion-button class="btnVolver" color="transparent" routerDirection="backward" expand="block" (click)="backToLogin()">
+        Volver
+      </ion-button>
+      </div> 
+    </div>
+      <div *ngIf="authService.token ">
+          Gracias por volver.
+          <ion-button class="loginButton" color="tertiary" expand="block" (click)="toSlider()" routerDirection="forward">
+             CONTINUAR
+           </ion-button>
+           <ion-button shape="round" (click)="logOut()">
+           Cerrar Sesion
+         </ion-button>
+      </div>
+  </div>
+</ion-content>

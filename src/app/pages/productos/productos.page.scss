@@ -1,0 +1,78 @@
+ion-header {
+    background-image: url("../../../assets/imgs/bkg-construccion.jpg");
+    height: 160px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    ion-toolbar {
+        --background: transparent;
+        --color: #fff;
+        ion-title {
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .04rem;
+            font-size: 1.1rem;
+        }
+    }
+    .buscador {
+        width: 100%;
+        bottom: -30px;
+        position: absolute;
+        z-index: 2;
+        ion-searchbar {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+ion-content {
+    .wrapContent {
+        padding: 30px 15px 20px;
+        .pageTitle {
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+        .wrapProductos {
+            margin-bottom: 30px;
+            .producto:last-of-type {
+                border-bottom: none;
+            }
+            .producto {
+                margin: 10px 0;
+                border-bottom: 1px solid #d4d4d4;
+                padding-bottom: 10px;
+                .descProducto {
+                    padding-left: 15px;
+                    p {
+                        font-weight: 600;
+                        font-size: .7rem;
+                        margin: 2px 0;
+                    }
+                    .precioProducto {
+                        font-weight: 600;
+                        font-size: 1rem;
+                        margin: 5px 0 0;
+                    }
+                }
+                .agregarProducto {
+                    .addProduct {
+                        color: var(--ion-color-primary);
+                        --background: transparent;
+                        border: 2px solid var(--ion-color-primary);
+                        border-radius: 50%;
+                        --border-radius: 50%;
+                        --box-shadow: none;
+                        height: 50px;
+                        width: 50px;
+                        font-size: 0.5rem;
+                        ion-icon {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

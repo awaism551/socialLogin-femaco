@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>611845940831-q4pkjcvrhk4aaagdsjaraech53co618n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.611845940831-q4pkjcvrhk4aaagdsjaraech53co618n</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>611845940831-nihmjuj5vm87rt4qlm42srsu6fpu9j37.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDfxXJvRgN-tVhJP6UJQgMxL9ljcNmhG5g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>611845940831</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.phaedra.login</string>
+	<key>PROJECT_ID</key>
+	<string>femacoapp-e89ba</string>
+	<key>STORAGE_BUCKET</key>
+	<string>femacoapp-e89ba.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:611845940831:ios:e8e0f161c37da05a875dea</string>
+	<key>DATABASE_URL</key>
+	<string>https://femacoapp-e89ba.firebaseio.com</string>
+</dict>
+</plist>

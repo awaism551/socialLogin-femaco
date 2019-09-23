@@ -1,0 +1,16 @@
+<ion-content>
+  <ion-slides class="slideIntro" #slides pager="true" [options]="slideOptions" #slideWithNav
+  (ionSlideDidChange)="SlideDidChange(slider,slideWithNav)">
+    <ion-slide *ngFor="let s of slider.slidesItems">
+      <img src="../../assets/imgs/slides/{{s.imageName}}.png">
+      <h1>{{s.titulo}}</h1>
+      <h2>{{s.descripcion}}</h2>
+      <ion-button class="btnContinuar" color="secondary" expand="full" (click)="nextSlide()">
+        {{s.buttonText}}
+      </ion-button>
+      <ion-button *ngIf="lastSlide" (click)="goToHome()" class="btnOmitir" color="transparent" expand="block" routerDirection="forward">
+        OMITIR
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

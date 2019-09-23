@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title text-center>Movimientos</ion-title>
+    <h5 text-center>Actualizados al 05/07/2019</h5>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="tablaMovimientos">
+    <ion-row class="cabeceraMovimientos" align-items-center>
+      <ion-col size="2">
+        <h5>Tipo Comp.</h5>
+      </ion-col>
+      <ion-col size="3">
+          <h5>Número Comp.</h5>
+      </ion-col>
+      <ion-col size="3">
+          <h5>Fecha Vencimiento</h5>
+      </ion-col>
+      <ion-col size="2">
+          <h5>Total</h5>
+      </ion-col>
+      <ion-col size="2">
+          <h5>Saldo</h5>
+      </ion-col>
+    </ion-row>
+    
+    <div class="wrapMovimientos" *ngFor="let mov of movimientos">
+      <ion-row class="movimiento" align-items-center>
+          <ion-col size="2">
+            <ion-text>{{mov.tipoComprobante}}</ion-text>
+          </ion-col>
+          <ion-col size="3">
+              <ion-text>{{mov.numComprobante}}</ion-text>
+          </ion-col>
+          <ion-col size="3">
+              <ion-text>{{mov.FechaVencimiento}}</ion-text>
+          </ion-col>
+          <ion-col size="2">
+              <ion-text>${{mov.Total}}</ion-text>
+          </ion-col>
+          <ion-col size="2">
+              <ion-text>${{mov.Saldo}}</ion-text>
+          </ion-col>
+        </ion-row>
+      </div>
+  </ion-grid>
+  <ion-item class="totalCredito" center>
+    TOTAL CRÉDITO: $ {{ totalCredito }}
+  </ion-item>
+</ion-content>

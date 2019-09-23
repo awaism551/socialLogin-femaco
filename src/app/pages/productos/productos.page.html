@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title text-center>Productos</ion-title>
+    </ion-toolbar>
+    <div class="buscador">
+      <ion-searchbar animated placeholder="Buscar"  (ionInput)="getItems($event)"
+  [showCancelButton]="shouldShowCancel"></ion-searchbar>
+    </div>
+  </ion-header>
+
+<ion-content>
+  <div class="wrapContent">
+    <ion-grid class="wrapProductos">
+      
+
+    <ion-list  *ngFor="let user of items">
+      <ion-row class="producto ion-align-items-center">
+        <ion-col size="2" class="imgProducto">
+          <img src="../../../assets/imgs/bolsa-loma-negra.jpg"/>
+        </ion-col>
+        <ion-col size="8" align-self-center class="descProducto">
+          <p class="nombreProductoUno">{{user.descripcion}}</p>
+
+        </ion-col>
+        <ion-col size="2" class="agregarProducto">
+          <ion-button class="addProduct" (click)="gregarProducto(user.codigo, user.descripcion, user.um)">
+            <ion-icon name="add"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+
+    </ion-grid>
+  </div>
+</ion-content>

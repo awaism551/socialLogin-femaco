@@ -1,5 +1,7 @@
 {
   "name": "femacoapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title text-center>FEMACOAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="wrapBtnsHome">
+    <ion-button (click)="goToMiPedido()">
+      <div class="btnHome btnMiPedido ion-button">
+        <img class="iconBtnHome" src="../../../assets/imgs/icono-mi-pedido.png" />
+        <h3 class="nameBtnHome">Mi Pedido</h3>
+      </div>
+    </ion-button>
+    <ion-button (click)="goToMovimientos()">
+      <div class="btnHome btnMovimientos">
+        <img class="iconBtnHome" src="../../../assets/imgs/icono-movimientos.png" />
+        <h3 class="nameBtnHome">Movimientos</h3>
+      </div>
+    </ion-button>
+    <ion-button (click)="goToAutogestion()">
+      <div class="btnHome btnMovimientos">
+        <img class="iconBtnHome" src="../../../assets/imgs/icono-autogestion.png" />
+        <h3 class="nameBtnHome">Autogestión</h3>
+      </div>
+    </ion-button>
+
+  </div>
+</ion-content>

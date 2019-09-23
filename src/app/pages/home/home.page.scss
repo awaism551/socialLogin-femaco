@@ -1,0 +1,46 @@
+ion-header::after {
+    background-image: none;
+}
+ion-header ion-toolbar {
+    --background: var(--ion-color-primary);
+    --color: #fff;
+    ion-title {
+        font-weight: 600;
+        letter-spacing: .04rem;
+    }
+}
+ion-content {
+    --background: var(--ion-color-primary);
+
+    .wrapBtnsHome {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        ion-button {
+            --border-radius: 50%;
+            height: 140px;
+            width: 140px;
+            --background: #fff;
+            margin: 15px 0;
+            .btnHome {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img {
+                    max-width: 55px;
+                }
+                h3 {
+                    font-size: .8rem;
+                    font-weight: 600;
+                    letter-spacing: .01rem;
+                    text-transform: uppercase;
+                    color: #4d4d4d;
+                }
+            }
+        }
+    }
+}
